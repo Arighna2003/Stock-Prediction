@@ -64,9 +64,9 @@ input_data= scaler.fit_transform(final_df)
 x_test= []
 y_test=[]
 
-for i in range (100,input_data.shape[0]):
+for i in range(100, input_data.shape[0]):
     x_test = np.concatenate((x_test, input_data[i-100:i].reshape(1, 100, 1)), axis=0)
-    y_test = np.concatenate((y_test, [input_data[i, 0]]), axis=0)
+    y_test = np.concatenate((y_test, input_data[i, 0].reshape(1, 1)), axis=0)
     
 x_test, y_test = np.array(x_test), np.array(y_test)
 y_predicted = model.predict(x_test)
