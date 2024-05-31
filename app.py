@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 import pandas_datareader as data
 from keras.models import load_model
 import streamlit as st
-
+from sklearn.preprocessing import MinMaxScaler
+from keras.layers import Dense, Dropout , LSTM
+from keras.models import Sequential
 
 start = '2010-01-01'
 end = '2023-09-01'
