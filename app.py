@@ -9,7 +9,7 @@ from keras.layers import Dense, Dropout , LSTM
 from keras.models import Sequential
 
 start = '2010-01-01'
-end = '2023-09-01'
+end = '2024-05-01'
 
 st.title('Stock Trend Prediction')
 
